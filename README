@@ -1,0 +1,17 @@
+Required to create the graphs: 
+   
+   Graphing lib: gnuplot  
+   perl        : Chart::Gnuplot
+
+Before starting you need to build libev and libevent and install them in ./lib
+
+  ./build_event_libs.sh
+  make clean; make all
+  ./bench.pl
+  ./create_charts.pl
+
+The bench script should take a long time. Have a play around with it to see
+what it does.
+
+You can find the graphs in ./graphs along with a basic index.html file. If you 
+craete different graphs the HTML file is not updated so you need to add them. 
